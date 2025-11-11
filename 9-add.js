@@ -1,14 +1,10 @@
 const args = process.argv.slice(2);
 
-function add(a, b) {
-  return a + b;
-}
+const a = parseInt(args[0], 10);
+const b = parseInt(args[1], 10);
 
-const firstInt = parseInt(args[0]);
-const secondInt = parseInt(args[1]);
-
-if (isNaN(firstInt) || isNaN(secondInt)) {
-  console.log('0,1');
+if (!isNaN(a) && args[1] !== undefined && !isNaN(b)) {
+  console.log(a + b);
 } else {
-  console.log(add(firstInt, secondInt));
+  console.log('NaN');
 }
