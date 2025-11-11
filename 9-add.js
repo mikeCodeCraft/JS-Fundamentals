@@ -8,7 +8,7 @@ const firstInt = parseInt(args[0]);
 const secondInt = parseInt(args[1]);
 
 if (isNaN(firstInt) || isNaN(secondInt)) {
-  console.log('Please provide two integers');
+  console.log('0,1');
 } else {
   console.log(add(firstInt, secondInt));
 }
